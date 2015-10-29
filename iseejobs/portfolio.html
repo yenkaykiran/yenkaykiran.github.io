@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Professional a corporate portfolio Category Flat Bootstarp Responsive Website Template | Portfolio :: w3layouts</title>
+<title>ISEE Staffing Solutions Pvt. Ltd., - Manpower Consulting | Talent Sourcing | Permanent and Temporary Staffing | Bangalore | India</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,9 +26,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		jQuery(function($) {
 			$(".swipebox").swipebox();
 		});
+		
+		function checkAgree(form) {
+			if (form.agree.checked == false) {
+				alert('You must agree to our Terms and Conditions');
+				return false;
+			} else {
+				return true;
+			}
+		}
 	</script>
     <!------ Eng Light Box ------>
-
 </head>
 <body>
 <!-- header -->
@@ -64,7 +72,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li><a href="about.html" data-hover="ABOUT">ABOUT</a></li>
 								<li><a href="services.html" data-hover="SERVICES">SERVICES</a></li>
 								<li><a href="portfolio.html" data-hover="JOBSEEKERS">JOBSEEKERS</a></li>
-                                <li><a href="404.html" data-hover="CLIENTS">CLIENTS</a></li>
+                                <li><a href="clients.html" data-hover="CLIENTS">CLIENTS</a></li>
 								<li><a href="contact.html" data-hover="CONTACT">CONTACT</a></li>
 									<div class="clearfix"> </div>
 							</ul>
@@ -86,58 +94,126 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>	
 <div class="portfolio">
 	<div class="container">
-	    <ul id="filters" class="clearfix">
-						<li><span class="filter active" data-filter="app card icon logos web">All</span></li>
-						<li><span class="filter" data-filter="card">Design</span></li>
-						<li><span class="filter" data-filter="icon">Logo</span></li>
-						<li><span class="filter" data-filter="logos">Photography</span></li>
-						</ul>
-					<div id="portfoliolist">
-					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper grid_box">		
-							 <a href="images/img1.jpg" class="swipebox"  title="Image Title"> <img src="images/img1.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
-		                </div>
-					</div>				
-					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper grid_box">		
-							 <a href="images/img2.jpg" class="swipebox"  title="Image Title"> <img src="images/img2.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
-		                </div>
-					</div>					
-					<div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper grid_box">		
-							 <a href="images/img3.jpg" class="swipebox"  title="Image Title"> <img src="images/img3.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
-		                </div>
-					</div>
-					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper grid_box">		
-							 <a href="images/img4.jpg" class="swipebox"  title="Image Title"> <img src="images/img4.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
-		                </div>
-					</div>			
-					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper grid_box">		
-							 <a href="images/img5.jpg" class="swipebox"  title="Image Title"> <img src="images/img5.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
-		                </div>
-					</div>	
-					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper grid_box">		
-							 <a href="images/img6.jpg" class="swipebox"  title="Image Title"> <img src="images/img6.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
-		                </div>
-					</div>	
-					<div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper grid_box">		
-							 <a href="images/img7.jpg" class="swipebox"  title="Image Title"> <img src="images/img7.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
-		                </div>
-						</div>
-						<div class="portfolio logos mix_all wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper grid_box">		
-							 <a href="images/img8.jpg" class="swipebox"  title="Image Title"> <img src="images/img8.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
-		                </div>
-					</div>
-				<div class="clearfix"></div>					
+		<div class="service-grids">
+			<div class="col-md-9 service-grid">
+				<img src="images/jobseekers.jpg" class="img-responsive" alt="" />
+				<h3>Jobseekers</h3>
+				<p>ISEE Staffing Solutions helps you in positioning your candidature & your skillsets to the Employer in the right way. We ensure that your candidature gets the right visibility to a potential employer.</p>
+				<p>We adhere to a graded process, by which we identify job seekers competencies (talent) and match it to employer's HR requirements. We also advise job seekers depending on their skillsets, and guide them in the selection of assignments.</p>
+				<p>With a wide range of opportunities and hundreds of well-paid, satisfying jobs, ISEE Staffing Solutions offers you the keys to your future. Send us your resume to <strong>info@iseestaffingsolutions.com</strong></p>
+				<p>Alternatively, you can also fill up the RESUME APPLICATION SYSTEM below.</p>
+				<br />
+				<form method="post" action="contact.php" enctype="multipart/form-data">
+					<table class="table">
+						<tbody>
+							<tr>
+								<td>Name:</td>
+								<td><input name="First_Last_Name" type="text" id="First_Last_Name2" size="25" /></td>
+							</tr>
+							<tr>
+								<td>E-mail:</td>
+								<td><input name="from" type="text" size="25" /></td>
+							</tr>
+							<tr>
+								<td>Number:</td>
+								<td><input name="Phone" type="text" id="Phone" size="15" /></td>
+							</tr>
+							<tr>
+								<td>Address:</td>
+								<td><input name="Address" type="text" id="Address5" size="25" /></td>
+							</tr>
+							<tr>
+								<td>City:</td>
+								<td><input name="City" type="text" id="City3" size="25" /></td>
+							</tr>
+							<tr>
+								<td>PIN Code</td>
+								<td><input name="Zip-code" type="text" id="Zip-code" size="15" /></td>
+							</tr>
+							<tr>
+								<td>Contact Type</td>
+								<td>
+									<label> 
+				                        <input type="radio" name="Contact_preference" value="email" />
+				                        <strong>Email</strong>
+			                        </label>
+			                        <label> 
+				                        <input type="radio" name="Contact_preference" value="phone" />
+				                        <strong>Phone</strong>
+			                        </label>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table width="90%" border="0" cellspacing="10" cellpadding="10">
+						<tbody>
+							<tr>
+								<td bgcolor="#FFFFFF">
+									<p align="center">
+										<font size="2" face="Arial, Helvetica, sans-serif"><strong>
+										<font color="#333333" size="2"> Would you Like to Upload your Resume?</font></strong></font>
+									</p>
+									<p align="center">
+										<font size="2" face="Arial, Helvetica, sans-serif">
+											<strong>Include your File </strong> <input name="FILE" type="FILE" size="25">
+										</font>
+									</p>
+									<div align="center">
+										<input type="checkbox" name="agree" />
+										<font size="2" face="Arial, Helvetica, sans-serif">I agree to the <strong>AUTHORIZATION</strong></font>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table width="100%" border="0" cellspacing="0" cellpadding="4"
+						class="CenterTable">
+						<tbody>
+							<tr>
+								<td align="left" valign="top"><strong><font
+										size="2" face="Arial, Helvetica, sans-serif">
+											<div align="center">
+												&nbsp;&nbsp; <input name="submit" type="submit"
+													class="submit_button"
+													onclick="return checkAgree(this.form)" value="Send">
+												&nbsp;&nbsp;&nbsp; <input type="reset" value="Clear"
+													name="B2">
+											</div>
+							</tr>
+						</tbody>
+					</table>
+				</form>
 				</div>
-		  <div class="clearfix"></div>
-            </div>
+			<div class="col-md-3 service-grid">
+				<img src="images/trainingbanner.jpg" class="img-responsive" alt="" />
+				<h3>Latest Openings</h3>
+				<marquee direction="up" width="220" align="center" height="220" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="2" style="height: 220px; width: 220px;">
+				<font size="2"><strong>AUTO CAD</strong> </font><br>
+				<font size="2">BE or Dip - 2 years Exp</font><br><br>
+				<font size="2"><strong>SERVICE ENGINEER</strong></font><br>
+				<font size="2">diploma Electronics with 3 years expirience, Sal - 12000 to 15000, Permanent Position</font><br><br>
+				<font size="2"><strong>Call Centre / BPO/ Tele caller</strong></font><br>
+				<font size="2">PUC; Any graduate; Sal-6K to 15K; Pls contact : 080-28520943,998688109,9972861055.</font><br><br>
+				<font size="2"><strong>Admin Assistant </strong></font><br>
+				<font size="2">Any Degree, Any Post Graduate; Contact No: 9986888109</font><br><br>
+				<font size="2"><strong>Helpers</strong></font><br>
+				<font size="2">No education Require Salary 5500 + Food + Accomidation</font><br><br>
+				<font size="2"><strong>Document Collection</strong></font><br>
+				<font size="2">SSLC, PUC, Degree And Two weeler Require.</font><br><br>
+				<font size="2"><strong>Data Entry Operator</strong></font><br>
+				<font size="2">SSLC, PUC, Any Degree Contact No:9986263357.</font><br><br>
+				<font size="2">ITI - ELECTRICAL, ELECTRONIC MECHANIC SALARY - 4500 + FOOD + TRAVEL</font><br><br>
+				<font size="2"><strong>Technician</strong></font><br>
+				<font size="2"> ITI - Fitters, Electronic, Electrical Sal : 4500 - 8500 + Food + Accommodation for MNC</font><br><br>
+				</marquee>
+				<h3>A World of Opportunities</h3>
+				<p>The following mentioned above are the current openings available with us and with our clients.</p>
+				<p>In case if you don't find jobs matching your skillsets; kindly forward your profile to us at <strong>info@iseestaffingsolutions.com</strong> or use our Resume Application System and we will contact you when there is a suitable opening matching your profile.</p>
 			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	</div>
 	  <!-- Script for gallery Here -->
 				<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
 					<script type="text/javascript">

@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>	Professional a corporate portfolio Category Flat Bootstarp Responsive Website Template | 404 :: w3layouts</title>
+<title>ISEE Staffing Solutions Pvt. Ltd., - Manpower Consulting | Talent Sourcing | Permanent and Temporary Staffing | Bangalore | India</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,6 +19,59 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 <script src="js/jquery.min.js"></script>
+<script src="js/jquery.swipebox.min.js"></script>
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script type="text/javascript">
+	jQuery(function($) {
+		$(".swipebox").swipebox();
+	});
+	$(function() {
+
+		var filterList = {
+
+			init : function() {
+
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector : '.portfolio',
+					filterSelector : '.filter',
+					effects : [ 'fade' ],
+					easing : 'snap',
+					// call the hover effect
+					onMixEnd : filterList.hoverEffect()
+				});
+
+			},
+
+			hoverEffect : function() {
+
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(function() {
+					$(this).find('.label').stop().animate({
+						bottom : 0
+					}, 200, 'easeOutQuad');
+					$(this).find('img').stop().animate({
+						top : -30
+					}, 500, 'easeOutQuad');
+				}, function() {
+					$(this).find('.label').stop().animate({
+						bottom : -40
+					}, 200, 'easeInQuad');
+					$(this).find('img').stop().animate({
+						top : 0
+					}, 300, 'easeOutQuad');
+				});
+
+			}
+
+		};
+
+		// Run the show!
+		filterList.init();
+
+	});
+</script>
 </head>
 <body>
 <!-- header -->
@@ -52,9 +105,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<ul class="cl-effect-15">
 							<li><a href="index.html" "data-hover="HOME">HOME</a></li>
 								<li><a href="about.html" data-hover="ABOUT">ABOUT</a></li>
-								<li><a href="services.html" data-hover="SERVICES">SERVICES</a></li>
+								<li><a href="services.html">SERVICES</a></li>
 								<li><a href="portfolio.html" data-hover="JOBSEEKERS">JOBSEEKERS</a></li>
-                                <li><a href="404.html" data-hover="CLIENTS">CLIENTS</a></li>
+                                <li class="active"><a href="clients.html" data-hover="CLIENTS">CLIENTS</a></li>
 								<li><a href="contact.html" data-hover="CONTACT">CONTACT</a></li>
 									<div class="clearfix"> </div>
 							</ul>
@@ -73,17 +126,91 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!-- script-for-nav --> 	
 				<i class="line"> </i>
 				
-	</div>		
-	<div class="main">
-<div class="container">
-<div class="error-404 text-center">
-			<h1>404</h1>
-				<p>this link dead link</p>
-				<a class="b-home" href="index.html">Back to Home</a>
-		</div>
-</div>
-</div>
-<i class="line"> </i>
+	</div>	
+<!-- services-section -->
+		<div class="services-top-grids">
+			<div class="container">
+				<!---- services-grids ---->
+				<div class="service-grids">
+					<div class="col-md-4 service-grid">
+						<h3>Our Featured Clients</h3>
+						<table width="100%" border="0" cellpadding="0">
+							<tbody>
+								<tr>
+									<td><img src="images/apc.jpg"></td>
+									<td><img src="images/autocrat.jpg"></td>
+								</tr>
+								<tr>
+									<td><img src="images/tribi.jpg"></td>
+									<td><img src="images/felder.jpg"></td>
+								</tr>
+								<tr>
+									<td><img src="images/eastindiagroup.jpg"></td>
+									<td><img src="images/aron.jpg"></td>
+								</tr>
+								<tr>
+									<td><img src="images/3dtech.jpg"></td>
+									<td><img src="images/agsar.jpg"></td>
+								</tr>
+								<tr>
+									<td><img src="images/altex.jpg"></td>
+									<td><img src="images/apollo.jpg"></td>
+								</tr>
+								<tr>
+									<td><img src="images/aristos.jpg"></td>
+									<td><img src="images/bazarclicks.jpg"></td>
+								</tr>
+								<tr>
+									<td><img src="images/binary.jpg"></td>
+									<td><img src="images/vasal.jpg"></td>
+								</tr>
+								<tr>
+									<td><img src="images/dme.jpg"></td>
+									<td><img src="images/gg.jpg"></td>
+								</tr>
+								<tr>
+									<td><img src="images/gtree.jpg"></td>
+									<td><img src="images/landmaark.jpg"></td>
+								</tr>
+								<tr>
+									<td><img src="images/natrual.jpg"></td>
+									<td><img src="images/parsh.jpg"></td>
+								</tr>
+	
+							</tbody>
+						</table>
+				</div>
+					<div class="col-md-4 service-grid">
+						<h3>Recognition</h3>
+						<div id="portfoliolist">
+							<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="recog" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper grid_box">
+									<a href="images/07_tn.jpg" class="swipebox" title="Recognition">
+										<img src="images/07_tn.jpg" class="img-responsive" alt="">
+										<span class="zoom-icon"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 service-grid">
+						<h3>Performance Letters</h3>
+						<p>
+							ISEE Staffing Solutions primarily fulfils the duties expected of a staffing agency. When the requirement is for qualified and experienced people for a short duration of time, our staffing services are vital. Our staffing services cover almost all the diverse verticals and businesses. Our HR personnel provide customers personalized and innovative staffing solutions in the most professional manner.
+						</p>
+						Our staffing solutions offer the following benefits:
+						<br/>
+						<ul>
+							<li>Does away with the hiring process on the part of Employers.</li>
+							<li>We can provide people to carry out short time work or work with employers on a permanent basis. Those companies that need extra help for short duration and need to adhere to timelines greatly benefit from us.</li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				</div>
+				</div>
+				<i class="line"> </i>
+<!-- services-section  -->
 <!-- footer -->
 	<div class="footer">
 		<div class="container">
@@ -94,7 +221,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><span><i class="roc1"> </i>Electronic City, Hosur Main Road, Bangalore - 560 100</span>
 							</li><li><span><i class="phone1"> </i>080 - 28520943 / 28528128</span>
 							</li><li><a href="mailto:info@iseestaffingsolutions.com"><i class="mail1"> </i>info@iseestaffingsolutions.com </a></li>	
-							</li><li><span><i class="sky"> </i>a-tech-support</span>
+							</li><li><span><i class="sky"> </i>Professional-support</span>
 								<div class="clearfix"> </div>						
 						</ul>
 				</div>
