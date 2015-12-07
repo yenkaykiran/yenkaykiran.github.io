@@ -777,3 +777,20 @@ input[type="submit"].small, input[type="reset"].small, input[type="button"].smal
 .text-justify {
 	text-align: justify;
 }
+
+.bottom-line-holder {
+    padding: 0em;
+    background-color: white;
+    background-size: cover;
+}
+
+.bottom-line {
+	padding: 2em 0em 2em 0em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #82b440;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 300;
+}
