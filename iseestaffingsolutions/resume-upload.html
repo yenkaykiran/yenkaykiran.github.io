@@ -21,30 +21,17 @@
 			<link rel="stylesheet" href="css/style.css" />
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-		<script type="text/javascript">
-		// <![CDATA[
-		jQuery(document).ready(function(){
-		    $('#contactform').submit(function(){                  
-		        var action = $(this).attr('action');
-		        $.post(action, { 
-		            name: $('#name').val(),
-		            email: $('#email').val(),
-		            company: $('#company').val(),
-		            subject: $('#subject').val(),
-		            message: $('#message').val()
-		        },
-		            function(data){
-		                $('#contactform #submit').attr('disabled','');
-		                $('.response').remove();
-		                $('#contactform').before('<p class="response">'+data+'</p>');
-		                $('.response').slideDown();
-		                if(data=='Message sent!') $('#contactform').slideUp();
-		            }
-		        ); 
-		        return false;
-		    });
-		});
-		// ]]>
+		<script type="text/javascript" language="JavaScript">
+			<!--
+			function checkAgree(form) {
+			 if (form.agree.checked == false) {
+			 alert ('You must agree to our Terms and Conditions');
+			 return false;
+			 } else {
+			 return true;
+			 }
+			}
+		// -->
 		</script>
 	</head>
 	<body>
@@ -66,14 +53,14 @@
 						<li><a href="about.html">About</a></li>
 						<li><a href="services.html">Services</a></li>
 						<li><a href="clients.html">Clients</a></li>
-                        <li><a href="resume-upload.html">Resume Uploader</a></li>
+						<li class="active"><a href="resume-upload.html">Resume Uploader</a></li>
 						<li><a href="#">Login</a>
 							<ul>
 								<li><a href="#">Job Seeker</a></li>
 								<li><a href="#">Employer</a></li>
 								<li><a href="#">Admin</a></li>
 							</ul></li>
-						<li class="active"><a href="contact.html">Contact Us</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -105,31 +92,28 @@
 						<div id="sidebar" class="3u">
 							<section>
 								<header class="major">
-									<h2>Corporate Office</h2>
+									<h2>Latest Openings</h2>
 								</header>
-								<p>
-								    <strong>ISEE Staffing Solutions Pvt Ltd.</strong>
-								    #466, N.R Reddy Building,Ist floor,
-									Opp: Axis Bank, Konappana 
-									Agrahara, Electronic City, Hosur Main 
-									Road, Bangalore - 560 100.
-									Telephone: 080 - 28520943 / 28528128<br/>
-									E-mail: <a href="mailto:info@iseestaffingsolutions.com"><i class="mail1"></i>info@iseestaffingsolutions.com </a><br/>
-									Web: http://www.iseestaffingsolutions.com<br/>
-									<strong>Branch Offices:</strong>
-									<strong>Bangalore:</strong>
-                                    No.70, 3rd Cross, 
-									Opp. Mariyamma Temple, Aswath Nagar, Marathahalli, Bangalore - 37.
-									Telephone: 080 - 28520943 / 28528128<br/>
-                                    <strong>Andhra Pradesh:</strong>
-                                    #17-147, 1st Floor, RTC Colony, KN Road, Near Himaja High School, Puttur Mandal, Chittor Dist, Andra Pradesh - 517 583<br/>
-                                    <strong>Chennai:</strong>
-                                    LL1, Lloyds Colony, Mutthaiah Street, Royapeatta, Chennai - 600 014<br/>
-                                    <strong>Hyderabad:</strong>
-                                    #2-1/1, 3rd Floor, No. 301, SS Plaza, Near Devi Homes, Old Hafeezpet, Miyapur, Hyderabad - 500 049<br/>
-                                    <strong>New Delhi:</strong>
-                                    #101, 1st Floor, Pradhan Market, Veer Bazar Wali Gali, Kapashera, New Delhi - 110 037. Mobile: 8882205051 / 8882205056
-								</p>
+								<a href="service-details.html"><img alt="Recruitment" src="./images/trainingbanner.jpg"></a>
+								<marquee direction="up" width="220" align="center" height="220" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="2" style="height: 220px; width: 220px;">
+								<font size="2"><strong>AUTO CAD</strong> </font><br>
+								<font size="2">BE or Dip - 2 years Exp</font><br><br>
+								<font size="2"><strong>SERVICE ENGINEER</strong></font><br>
+								<font size="2">diploma Electronics with 3 years expirience, Sal - 12000 to 15000, Permanent Position</font><br><br>
+								<font size="2"><strong>Call Centre / BPO/ Tele caller</strong></font><br>
+								<font size="2">PUC; Any graduate; Sal-6K to 15K; Pls contact : 080-28520943,998688109,9972861055.</font><br><br>
+								<font size="2"><strong>Admin Assistant </strong></font><br>
+								<font size="2">Any Degree, Any Post Graduate; Contact No: 9986888109</font><br><br>
+								<font size="2"><strong>Helpers</strong></font><br>
+								<font size="2">No education Require Salary 5500 + Food + Accomidation</font><br><br>
+								<font size="2"><strong>Document Collection</strong></font><br>
+								<font size="2">SSLC, PUC, Degree And Two weeler Require.</font><br><br>
+								<font size="2"><strong>Data Entry Operator</strong></font><br>
+								<font size="2">SSLC, PUC, Any Degree Contact No:9986263357.</font><br><br>
+								<font size="2">ITI - ELECTRICAL, ELECTRONIC MECHANIC SALARY - 4500 + FOOD + TRAVEL</font><br><br>
+								<font size="2"><strong>Technician</strong></font><br>
+								<font size="2"> ITI - Fitters, Electronic, Electrical Sal : 4500 - 8500 + Food + Accommodation for MNC</font><br><br>
+								</marquee>
 							</section>
 						</div>
 
@@ -137,31 +121,13 @@
 						<div id="content" class="9u skel-cell-important">
 							<section>
 								<header class="major main-title">
-									<h2>Enquiry Form</h2>
+									<h2>Resume Uploader</h2>
 								</header>
-								<form method="post" action="contact.php" enctype="multipart/form-data">
-								    <div class="form-group">
-									    <label for="name">Name </label>
-									    <input name="First_Last_Name" type="text" id="First_Last_Name2" size="25" class="form-control"/>
-								    </div>
-                                    <div class="form-group">
-                                        <label for="email">Email </label>
-                                        <input type="email" class="form-control" id="email" placeholder="Email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="company">Company</label>
-                                        <input type="text" class="form-control" id="company" placeholder="Company">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="subject">Subject</label>
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="message">Message <span class="red">*</span></label>
-                                        <textarea id="message" name="message" rows="6" cols="50" class="form-control"></textarea>
-                                    </div>
-                                    <button type="submit" class="button btn btn-default">Submit</button>
-						        </form>
+								<img alt="Resume Uploader" src="./images/im05.jpg">
+								<p align="justify">ISEE Staffing Solutions helps you in positioning your candidature & your skillsets to the Employer in the right way. We ensure that your candidature gets the right visibility to a potential employer.</p>
+								<p align="justify">We adhere to a graded process, by which we identify job seekers competencies (talent) and match it to employer's HR requirements. We also advise job seekers depending on their skillsets, and guide them in the selection of assignments.</p>
+								<p align="justify">With a wide range of opportunities and hundreds of well-paid, satisfying jobs, ISEE Staffing Solutions offers you the keys to your future. Send us your resume to <a href="mailto:info@iseestaffingsolutions.com"><i class="mail1"></i>info@iseestaffingsolutions.com </a></p>
+								<p align="justify">Alternatively, you can also fill up the RESUME APPLICATION SYSTEM below.</p>
 							</section>
 						</div>
 					</div>
